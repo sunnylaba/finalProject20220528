@@ -1,0 +1,140 @@
+body {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    @include mobile{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg);
+        background-position: top 66px left 0px ;
+    }
+}
+
+.container {
+    .navArea {
+        margin-bottom: 100px;
+    }
+    .nav {
+        margin-bottom: 92px;
+    }
+    >p {
+        padding-bottom: 180px;
+    }
+}
+/* 價錢區域 */
+.priceList {
+    margin-bottom: 54px;
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        li {
+            margin-right: 16px;
+            padding-bottom: 16px;
+        }
+        a {
+            padding: 12px 32px;
+            color: $primary-color;
+            font-size: $font-s;
+            border: 1px solid $primary-color;
+            border-radius: 27px;
+            &:hover {
+                background-color: $primary-color;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+.pricePlan {
+    margin-bottom: 100px;
+    @include pad {
+        margin-bottom: 60px;
+    }
+}
+.priceCardArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    h4 {
+        padding: 16px 0;
+        border-bottom: 1px solid #DDDDDD;
+    }
+    .priceCard {
+        width: 48%;
+        @include mobile {
+            width: 98%;
+            margin-bottom: 24px;
+        }
+        
+    }
+    .cardContent {
+        padding: 32px 24px;
+        span {
+            font-size: $font-ss;
+        }
+        p {
+            text-align: center;
+        }
+        .subscribed {
+            width: 169px;
+            padding: 24px 0;
+            background-color: #F5F5F5;
+            border-radius: 12px;
+            h3 {
+                color: $primary-color;
+                font-weight: normal;
+            }
+            >p {
+                font-size: $font-ss;
+            }
+            .textDark {
+                color:#221E1F;
+            }
+        }
+        .subscribedArea {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .checkList li {
+            padding-bottom: 16px;
+            @include mobile {
+                font-size: 14px;
+            }
+        }
+        a {
+            margin: 0 auto;
+            &:hover {
+                background-color: $secondary-color;
+            }
+        }
+    }
+}
+
+/* QA */
+.qa {
+    ul {
+        margin-bottom: 100px;
+        @include pad {
+            margin-bottom: 60px;
+        }
+        width: 100%;
+        li {
+            margin-bottom: 16px;
+            padding: 16px 32px;
+            p {
+                font-size: $font-s;
+            }
+            .textPrimary {
+                color: $primary-color;
+            }
+            .textLight {
+                font-size: 16px;
+                color: #747474;
+            }
+        }
+    }
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}

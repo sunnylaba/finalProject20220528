@@ -1,0 +1,461 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* color */
+/*font*/
+/* 查看響應式多出x軸原因*/
+/*
+* {
+    outline: solid #f00 1px !important;
+    background: #000 !important;
+    color:  #fff !important;
+}
+*/
+/* 基礎設定*/
+body {
+  font-family: Verdana, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+  /* 解決多餘3px*/
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 28px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 基礎設定*/
+/*margin設定*/
+.mb-1 {
+  margin-bottom: 8px;
+}
+
+.mb-2 {
+  margin-bottom: 16px;
+}
+
+.mb-3 {
+  margin-bottom: 24px;
+}
+
+.mb-4 {
+  margin-bottom: 32px;
+}
+
+.mb-6 {
+  margin-bottom: 48px;
+}
+
+/*margin設定*/
+/* 卡片樣式設定*/
+.cardStyle {
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+}
+
+/* 卡片樣式設定*/
+/* btn連結基本設定*/
+.btn {
+  width: 136px;
+  padding: 12px 32px;
+  background-color: #56C4C5;
+  color: #FFFFFF;
+  border-radius: 27px;
+  font-size: 18px;
+}
+
+/* btn連結基本設定*/
+/* container */
+.container {
+  max-width: 1088px;
+  margin: 0 auto;
+  margin-top: -71px;
+  /* 誤打誤撞處理，加top連結後，上方多出71px*/
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+/* nav*/
+.nav {
+  margin-top: 24px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    border-bottom: 2px solid #FFD153;
+    padding: 16px 0;
+  }
+  .nav img {
+    width: 130.84px;
+    height: 24px;
+  }
+}
+
+.nav .charge {
+  padding: 8px 32px;
+  color: #FFFFFF;
+  background: #FF5D50;
+  border-radius: 22px;
+}
+
+.nav .charge:hover {
+  background-color: #56C4C5;
+}
+
+/* footer */
+.footer p {
+  text-align: center;
+  background-color: #F5F5F5;
+  padding: 16px 0;
+}
+
+/* toTop*/
+.toTop {
+  width: 71px;
+  background-color: #56C4C5;
+  border-radius: 50%;
+  line-height: 71px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 80%;
+  left: 90%;
+}
+
+.toTop:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .toTop {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+  }
+}
+
+body {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+@media (max-width: 414px) {
+  body {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg);
+    background-position: top 66px left 0px;
+  }
+}
+
+.container .navArea {
+  margin-bottom: 100px;
+}
+
+.container .nav {
+  margin-bottom: 92px;
+}
+
+.container > p {
+  padding-bottom: 180px;
+}
+
+/* 價錢區域 */
+.priceList {
+  margin-bottom: 54px;
+}
+
+.priceList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.priceList ul li {
+  margin-right: 16px;
+  padding-bottom: 16px;
+}
+
+.priceList ul a {
+  padding: 12px 32px;
+  color: #56C4C5;
+  font-size: 18px;
+  border: 1px solid #56C4C5;
+  border-radius: 27px;
+}
+
+.priceList ul a:hover {
+  background-color: #56C4C5;
+  color: #FFFFFF;
+}
+
+.pricePlan {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .pricePlan {
+    margin-bottom: 60px;
+  }
+}
+
+.priceCardArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.priceCardArea h4 {
+  padding: 16px 0;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.priceCardArea .priceCard {
+  width: 48%;
+}
+
+@media (max-width: 414px) {
+  .priceCardArea .priceCard {
+    width: 98%;
+    margin-bottom: 24px;
+  }
+}
+
+.priceCardArea .cardContent {
+  padding: 32px 24px;
+}
+
+.priceCardArea .cardContent span {
+  font-size: 12px;
+}
+
+.priceCardArea .cardContent p {
+  text-align: center;
+}
+
+.priceCardArea .cardContent .subscribed {
+  width: 169px;
+  padding: 24px 0;
+  background-color: #F5F5F5;
+  border-radius: 12px;
+}
+
+.priceCardArea .cardContent .subscribed h3 {
+  color: #56C4C5;
+  font-weight: normal;
+}
+
+.priceCardArea .cardContent .subscribed > p {
+  font-size: 12px;
+}
+
+.priceCardArea .cardContent .subscribed .textDark {
+  color: #221E1F;
+}
+
+.priceCardArea .cardContent .subscribedArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.priceCardArea .cardContent .checkList li {
+  padding-bottom: 16px;
+}
+
+@media (max-width: 414px) {
+  .priceCardArea .cardContent .checkList li {
+    font-size: 14px;
+  }
+}
+
+.priceCardArea .cardContent a {
+  margin: 0 auto;
+}
+
+.priceCardArea .cardContent a:hover {
+  background-color: #FF5D50;
+}
+
+/* QA */
+.qa ul {
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .qa ul {
+    margin-bottom: 60px;
+  }
+}
+
+.qa ul li {
+  margin-bottom: 16px;
+  padding: 16px 32px;
+}
+
+.qa ul li p {
+  font-size: 18px;
+}
+
+.qa ul li .textPrimary {
+  color: #56C4C5;
+}
+
+.qa ul li .textLight {
+  font-size: 16px;
+  color: #747474;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=priceStyle.css.map */
