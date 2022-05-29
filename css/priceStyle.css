@@ -265,7 +265,7 @@ body {
   background-position: right top;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 576px) {
   body {
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg);
     background-position: top 66px left 0px;
@@ -351,7 +351,7 @@ body {
   width: 48%;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 576px) {
   .priceCardArea .priceCard {
     width: 98%;
     margin-bottom: 24px;
@@ -406,7 +406,7 @@ body {
   padding-bottom: 16px;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 576px) {
   .priceCardArea .cardContent .checkList li {
     font-size: 14px;
   }

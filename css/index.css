@@ -359,7 +359,7 @@ body {
   height: 90px;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 576px) {
   .socialMedia {
     margin-bottom: 60px;
   }
@@ -425,7 +425,7 @@ body {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 576px) {
   .card p {
     font-size: 18px;
   }
@@ -530,7 +530,7 @@ body {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 576px) {
   .content .serviceItem {
     width: 98%;
   }
@@ -692,7 +692,7 @@ body {
   margin-top: 260px;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 576px) {
   .footerBanner {
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg);
   }
